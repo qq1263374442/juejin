@@ -7,5 +7,5 @@
 antd    
 react    
 react-router-dom    
-react-redux(简单使用管理用户状态) 
+react-redux(简单使用管理用户状态)    
 react-virtual-list （长列表渲染） 
