@@ -1,0 +1,93 @@
+@import '../../main.less';
+.pageHeader{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #f1f1f1;
+    background: @colorF;
+    color: #909090;
+    .container{
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        .logo{
+            margin-right: 1rem;
+            margin-left: 24px;
+            display: inline-block;
+            height: 22px;
+            width: auto;
+            img{
+                display: block;
+                width: 107px;
+                height: 22px;
+            }
+        }
+        .head-right-side{
+            display: flex;
+            align-items: center;
+            position: relative;
+            height: 100%;
+            margin: 0;
+            order: 0;
+            li{
+                padding-left: 20px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                .login{
+                    color: #007fff;
+                    background-color: rgba(30,128,255,.05);
+                }
+            }
+            
+        }
+    }
+    
+    .main-nav{
+        height: 100%;
+        flex: 1 0 auto;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        justify-content: space-between;
+        li.activeLi{
+            a{
+                color:@primary;
+            }
+        }
+        .ant-btn{
+            background: @primary;
+            color: @colorF;
+        }
+        ul{
+            .list;
+            justify-content: center;
+            height: 100%;
+            margin: 0;
+            li{
+                padding:0 15px;
+                cursor: pointer;
+                a{
+                    color: #666;
+                    text-decoration: none;
+                }
+                &:hover{
+                    a{
+                        color:@primary;
+                    }
+                }
+            }
+            li.activeLi{
+                a{
+                    color:@primary;
+                }
+            }
+        }
+    }
+    
+}
